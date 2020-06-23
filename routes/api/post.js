@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const { check, validationResult } = require('express-validator/check');
 const auth = require('../../middleware/auth');
-const chalk=require('chalk');
 
 const Post = require('../../models/Post');
 const Profile = require('../../models/Profile');
@@ -104,7 +103,6 @@ router.put('/like/:id', auth, async (req, res) => {
   try {
     const post = await Post.findById(req.params.id);
     console.log('post');
-    console.log(chalk.yellow(req.user),chalk.red('req.user'));
     
     // Check if the post has already been liked
     if (

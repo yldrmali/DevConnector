@@ -17,9 +17,7 @@ const UserSchema = new Schema({
 
 
 UserSchema.pre('findOneAndDelete',{query:true,document:false},async function(next){
-  console.log(chalk.blue('this.getQuery is right below'));
   const id= await this.getQuery()._id
-  console.log(chalk.red('id is====>'),id);
   await Profile.findOneAndDelete({user:id})
   await Post.deleteMany({user:id})
   next()
