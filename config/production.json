@@ -1,0 +1,6 @@
+{
+    "mongoURI":"mongodb+srv://atlasali:A123456@cluster0-st3r9.mongodb.net/mern?retryWrites=true&w=majority",
+    "secret":"Av5qa9dfg",
+    "githubClientId":"41c8f7f147a28f9d53f6",
+    "githubSecret":"6ef20f2549469fd4044683c79d15b8b53e816066"
+}
