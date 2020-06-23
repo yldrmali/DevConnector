@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { setAlert } from './alert';
-import chalk from 'chalk'
 import {
   GET_PROFILE,
   PROFILE_ERROR,

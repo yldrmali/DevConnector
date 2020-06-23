@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 const Profile=require('./Profile');
 const Post = require('./Post');
 const Schema = mongoose.Schema;
-const chalk = require('chalk');
 
 const UserSchema = new Schema({
   name: { type: String, required: true },
