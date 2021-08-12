@@ -1,7 +1,6 @@
 # DevConnector
 
-DevConncector is a MERN stack project. The project is made as a part of UDEMY course.
-
+DevConncector is a MERN stack project.
 
 ## Live Preview
 
